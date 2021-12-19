@@ -1,17 +1,17 @@
-duration = int(input("Введите период времени: "))                          # Определение duration для варианта №1
+duration = int(input("Введите период времени: "))                         # Определение duration для варианта №1
 
 print("Вариант №1. Ветвление")
 
-if duration // 86400:                                                      # Вычисление количества дней
+if duration // 86400:                                                     # Вычисление количества дней
     print(duration // 86400, "дн ", end='')
     duration %= 86400
-if duration // 3600:                                                       # Вычисление количества часов
+if duration // 3600:                                                      # Вычисление количества часов
     print(duration // 3600, "час ", end='')
     duration %= 3600
-if duration // 60:                                                         # Вычисление количества минут
+if duration // 60:                                                        # Вычисление количества минут
     print(duration // 60, "мин ", end='' )
     duration %= 60
-if duration % 60:                                                          # Вычисление количества секунд
+if duration % 60:                                                         # Вычисление количества секунд
     print(duration % 60, "сек")
 print()
 
